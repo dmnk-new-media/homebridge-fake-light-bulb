@@ -7,6 +7,9 @@
 
 
 # Homebridge Fake Light Bulb
+With this plugin, you can create one or multiple fake light bulbs in homebridge/homekit. Feel free to create some nice automations with these light bulbs :) 
+
+I needed this fake light bulbs for node-red automations. 
 
 ### Installation
 To install Homebridge Fake Light Bulb:
