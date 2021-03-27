@@ -2,11 +2,11 @@ import {
   AccessoryConfig,
   AccessoryPlugin,
   API,
-  HAP,
   CharacteristicEventTypes,
   CharacteristicGetCallback,
   CharacteristicSetCallback,
   CharacteristicValue,
+  HAP,
   Logging,
   Service
 } from "homebridge";
@@ -14,7 +14,7 @@ import {BulbState} from "./fakeLightBulbState.enum";
 
 let hap: HAP;
 
-export = (api: API) => {
+export = (api: API): void => {
   hap = api.hap;
   api.registerAccessory("homebridge-fake-light-bulb", FakeLightBulb);
 };
@@ -56,13 +56,13 @@ class FakeLightBulb implements AccessoryPlugin {
   }
 
   handleOnGet = (callback: CharacteristicGetCallback) => {
-    this.log.info("Current state of the bulb was returned: " + this.lightBulbState );
+    this.log.info("Current state of the bulb was returned: " + (this.lightBulbState ? BulbState.on : BulbState.off));
     callback(undefined, this.lightBulbState);
   }
 
   handleOnSet = (value: CharacteristicValue, callback: CharacteristicSetCallback) => {
     this.lightBulbState = value as number;
-    this.log.info("Bulb state was set to: " + this.lightBulbState);
+    this.log.info("Bulb state was set to: " + (this.lightBulbState ? BulbState.on : BulbState.off));
     callback();
   }
 
