@@ -1,0 +1,21 @@
+{
+  "pluginAlias": "homebridge-fake-light-bulb",
+  "pluginType": "accessory",
+  "singular": false,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "required": true,
+        "default": "Fake Light Bulb "
+      },
+      "brightness": {
+        "title": "Enable brightness",
+        "type": "boolean",
+        "default": false
+      }
+    }
+  }
+}
