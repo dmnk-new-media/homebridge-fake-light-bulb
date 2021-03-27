@@ -19,16 +19,16 @@ To install Homebridge Fake Light Bulb:
 ### Configuration
 
 - Config the Fake Light Bulb plugin through Homebridge Config UI X or manually by:
-```
-  "accessories": [
-        {
-            "name": "Fake Light Bulb",
-            "brightness": true,
-            "accessory": "homebridge-fake-light-bulb"
-        }
-    ]
   ```
-Key | Default | Description
--------- | ----------- | -----------
-`name` | Fake Light Bulb | Name of your fake light bulb
-`brightness` | false | Flag whether to expose brightness input field. 
+    "accessories": [
+          {
+              "name": "Fake Light Bulb",
+              "brightness": true,
+              "accessory": "homebridge-fake-light-bulb"
+          }
+      ]
+    ```
+  Key | Default | Description
+  -------- | ----------- | -----------
+  `name` | Fake Light Bulb | Name of your fake light bulb
+  `brightness` | false | Flag whether to expose brightness input field. 
