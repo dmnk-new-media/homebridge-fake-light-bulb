@@ -1,16 +1,16 @@
 {
-  "private": true,
-  "displayName": "Homebridge Fake Lightbulb",
+  "private": false,
+  "displayName": "Homebridge Fake Light Bulb",
   "name": "homebridge-fake-light-bulb",
   "version": "0.0.1",
   "description": "A homebridge plugin for fake light bulbs",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git://github.com/dmnk-new-media/homebridge-fake-light-bulb"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/dmnk-new-media/homebridge-fake-light-bulb/issues"
   },
   "engines": {
     "node": ">=10.17.0",
