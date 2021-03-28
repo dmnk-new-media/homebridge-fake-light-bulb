@@ -15,23 +15,25 @@ I needed this fake light bulbs for node-red automations.
 To install Homebridge Fake Light Bulb:
 - Follow the instructions on the [Homebridge Wiki](https://github.com/homebridge/homebridge/wiki) to install Homebridge
 - Install the Homebridge Fake Light Bulb plugin through Homebridge Config UI X or manually by:
-  ```
-  sudo npm -g i homebridge-fake-light-bulb
-  ```
+```
+sudo npm -g i homebridge-fake-light-bulb
+```
 
 ### Configuration
 
-- Config the Fake Light Bulb plugin through Homebridge Config UI X or manually by:
+Config the Fake Light Bulb plugin through Homebridge Config UI X or manually by:
+```
+  "accessories": [
+        {
+            "name": "Fake Light Bulb",
+            "brightness": true,
+            "color": "none",
+            "accessory": "homebridge-fake-light-bulb"
+        }
+    ]
   ```
-    "accessories": [
-          {
-              "name": "Fake Light Bulb",
-              "brightness": true,
-              "accessory": "homebridge-fake-light-bulb"
-          }
-      ]
-    ```
-  Key | Default | Description
-  -------- | ----------- | -----------
-  `name` | Fake Light Bulb | Name of your fake light bulb
-  `brightness` | false | Flag whether to expose brightness input field. 
+Key | Default | Values | Description
+-------- | ----------- | ----------- | -----------
+`name` | Fake Light Bulb | `string` | Name of your fake light bulb
+`brightness` | false | `boolean (true / false)` | Flag whether to expose brightness input field.
+`color` | none | `string ('none', 'colorTemperature', 'hue')` | Flag whether to expose none, a color temperature or a hue (saturation + color temperature + color mixer) input field. 

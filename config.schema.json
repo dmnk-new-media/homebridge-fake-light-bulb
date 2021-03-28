@@ -15,6 +15,17 @@
         "title": "Enable brightness",
         "type": "boolean",
         "default": false
+      },
+      "color": {
+        "title": "Color",
+        "type": "string",
+        "default": "none",
+        "oneOf": [
+          { "title": "None", "enum": ["none"] },
+          { "title": "Color Temperature (White Ambiance)", "enum": ["colorTemperature"] },
+          { "title": "Hue (Color Ambiance + Saturation + Color Temperature)", "enum": ["hue"] }
+        ],
+        "required": true
       }
     }
   }
