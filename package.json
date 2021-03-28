@@ -2,7 +2,7 @@
   "private": false,
   "displayName": "Homebridge Fake Light Bulb",
   "name": "homebridge-fake-light-bulb",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A homebridge plugin for fake light bulbs",
   "license": "Apache-2.0",
   "repository": {
